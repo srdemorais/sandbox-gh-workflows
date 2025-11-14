@@ -1,7 +1,7 @@
 name: Hello World
 
 on: 
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   say-hello-with-echo:
