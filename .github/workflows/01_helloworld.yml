@@ -13,6 +13,6 @@ jobs:
   Hello-hello-from-GHActions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/hello-world-javascript-action 
+      - uses: actions/hello-world-javascript-action
         with:
           who-to-greet: "Sergio"
