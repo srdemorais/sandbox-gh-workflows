@@ -1,18 +1,20 @@
-name: "Hello World"
+name: "Hello World workflow"
+
 on: [workflow_dispatch]
+
 jobs:
-  Hello-hello:
+  run_from_ubuntu_shell:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello one last time"
-  Hello-hello-from-Python:
-    runs-on: ubuntu-latest
+      - run: echo "Hello from Ubuntu shell!"
+  run_from_python_shell:
+    runs-on: ubuntu-lates
     steps:
-      - run: print("Hello one last time")
+      - run: print("Hello from Python shell!")
         shell: python
-  Hello-hello-from-GHActions:
+  run_from_gh_actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/hello-world-javascript-action@main
-        with:
-          who-to-greet: "Sergio"
+      uses: actions/hello-world-javascript-action@ebdda30dcb464fa90dc49c837d7b5506f49932d0
+      with:
+        who-to-greet: "Sergio"
