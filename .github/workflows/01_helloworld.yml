@@ -5,3 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello one last time"
+  Hello-hello-from-Python:
+    runs-on: ubuntu-latest
+    steps:
+      - run: print("Hello one last time")
+        shell: python
+  Hello-hello-from-GHActions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/hello-world-javascript-action 
+        with:
+          who-to-greet: "Sergio"
