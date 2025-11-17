@@ -16,5 +16,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       uses: actions/hello-world-javascript-action@main
-        with:
-          who-to-greet: "Sergio"
+      with:
+        who-to-greet: "Sergio"
