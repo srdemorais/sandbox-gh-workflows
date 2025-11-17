@@ -10,7 +10,7 @@ jobs:
     steps:
       - run: print("Hello one last time")
         shell: python
-  Hello-hello-from-GHActions
+  Hello-hello-from-GHActions:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/hello-world-javascript-action 
