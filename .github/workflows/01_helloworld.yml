@@ -1,10 +1,8 @@
-name: Hello World
-
-on: 
+name: "Hello World"
+on:
   workflow_dispatch:
-
 jobs:
-  say-hello-with-echo:
+  toto-tata:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World from Github actions !"
+      - run: echo "Hello World!"
