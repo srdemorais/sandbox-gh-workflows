@@ -6,11 +6,11 @@ jobs:
   hello_world_from_ubuntu_shell:
     runs-on: ubuntu-latest
     steps:
-      - runs: echo "Hello World from Ubuntu"
+      - run: echo "Hello World from Ubuntu"
   hello_world_from_python_shell:
     runs-on: ubuntu-latest
     steps:
-      - runs: print("Hello World from Python")
+      - run: print("Hello World from Python")
         shell: python
   hello_world_from_gh_action:
     runs-on: ubuntu-latest
